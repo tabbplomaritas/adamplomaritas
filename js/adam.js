@@ -34,7 +34,7 @@ $(document).ready(function() {
           let liAfter= $('nav ul li:after');
           if($(this).scrollTop()>=headerTop){
               $("header").addClass("animated colorChange");
-
+            
               $("h1").css("font-size", "3rem");
               $("nav ul li").css("color", "white");
           } else if ($(this).scrollTop()===0){

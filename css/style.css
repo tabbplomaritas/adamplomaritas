@@ -145,7 +145,7 @@ h1 span:first-of-type::after {
 }
 
 h1 span:last-of-type {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 h1 span:last-of-type::after {
@@ -181,7 +181,7 @@ button:focus {
   width: 100%;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgb(14, 167, 206);
+  /* border-bottom: 2px solid rgb(14, 167, 206); */
   transition: .3s all;
 }
 
@@ -370,7 +370,7 @@ section img {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
  html {
    font-size: 50%;
  }
@@ -379,12 +379,30 @@ section img {
    align-self: center;
  }
 
+ nav ul {
+   width: 100%;
+ }
+
+ nav ul li {
+   font-size: 2rem;
+ }
+
 .navbar {
-   margin-right: initial;
+  margin-right: 0;
+  margin-left: 0;
 }
 
  header {
-flex-direction: column; }
+  flex-direction: column; 
+}
+
+h1 {
+  /* text-align: center; */
+}
+
+nav ul li {
+  margin: 1rem;
+}
 
   nav ul li:nth-of-type(1) {
   animation-delay: .8s;
